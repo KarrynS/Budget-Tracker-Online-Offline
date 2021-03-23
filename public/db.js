@@ -60,6 +60,7 @@ function checkDatabase() {
 
         // clear all items in your store
         store.clear();
+        console.log("Cached cleared");
       });
     }
   };
