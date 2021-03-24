@@ -25,10 +25,10 @@ Download the pacakge and run npm i in command line to install all dependencies.
 
 ## Usage
 
-Deployed appliation here: 
+Deployed application here: 
 
 Application should appear as follows: 
-<img src="./public/BudgetTracker">
+<img src="./public/BudgetTracker.png">
 <br>
 
 ## License 
