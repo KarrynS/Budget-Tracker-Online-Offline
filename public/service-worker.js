@@ -6,14 +6,13 @@ const DATA_CACHE_NAME = "data-cache-v1";
 const FILES_TO_CACHE = [
     "/",
     "/index.html",
-    "/style.css",
+    "index.js",
+    "/styles.css",
     "/db.js",
     "/manifest.webmanifest",
     "/icons/icon-192x192.png",
-    "/icons.icons-512x512.png",
+    "/icons/icon-512x512.png",
   ];
-  
-  
   
   // install
   self.addEventListener("install", function(evt) {
@@ -27,6 +26,7 @@ const FILES_TO_CACHE = [
     self.skipWaiting();
   });
   
+  //activate
   self.addEventListener("activate", function(evt) {
     evt.waitUntil(
       caches.keys().then(keyList => {
@@ -71,7 +71,6 @@ const FILES_TO_CACHE = [
     }
   
     // if the request is not for the API, serve static assets using "offline-first" approach.
-    // see https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook#cache-falling-back-to-network
     evt.respondWith(
         caches.open(CACHE_NAME).then(cache => {
             return cache.match(evt.request).then(response => {
