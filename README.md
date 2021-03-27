@@ -25,7 +25,7 @@ Download the pacakge and run npm i in command line to install all dependencies.
 
 ## Usage
 
-Deployed application here: https://cryptic-plains-09377.herokuapp.com/
+Deployed application here: https://cryptic-plains-09377.herokuapp.com/ 
 
 Application should appear as follows: 
 <img src="./public/BudgetTracker.png">
