@@ -1,4 +1,4 @@
-## Budget-Trackers-Online-Offline
+## Budget-Tracker-Online-Offline
 
 A Budget Tracker application that gives users a fast and easy way to track their money anytime. 
 
